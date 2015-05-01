@@ -1,0 +1,43 @@
+{
+    "manifest_version": 2,
+    "name": "Tab Switcher 1",
+    "description": "Remap tab switch hotkeys (1-3, last)",
+    "version": "1.0",
+    "permissions": [
+        "tabs"
+    ],
+    "icons": { "16": "river16.png",
+               "32": "river32.png",
+               "128": "river128.png"},
+    "commands": {
+        "to-first-tab": {
+            "suggested_key": {
+                "default": "Alt+1"
+            },
+            "description": "Show 1st Tab"
+        },
+        "to-second-tab": {
+            "suggested_key": {
+                "default": "Alt+2"
+            },
+            "description": "Show 2nd Tab"
+        },
+        "to-third-tab": {
+            "suggested_key": {
+                "default": "Alt+3"
+            },
+            "description": "Show 3rd Tab"
+        },
+        "to-last-tab": {
+            "suggested_key": {
+                "default": "Alt+9"
+            },
+            "description": "Show Last Tab"
+        }
+    },
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": true
+    },
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}

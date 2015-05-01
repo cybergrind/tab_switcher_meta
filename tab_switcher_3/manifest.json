@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "name": "Tab Switcher 3",
+    "description": "Remap tab switch hotkeys (8)",
+    "version": "1.0",
+    "permissions": [
+        "tabs"
+    ],
+    "icons": { "16": "river16.png",
+               "32": "river32.png",
+               "128": "river128.png"},
+    "commands": {
+        "to-eighth-tab": {
+            "suggested_key": {
+                "default": "Alt+8"
+            },
+            "description": "Show 8th Tab"
+        }
+    },
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": true
+    },
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}
